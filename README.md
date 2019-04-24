@@ -1,4 +1,4 @@
-# odj-starter-springboot-datastore-minimal- -
+# odj-starter-springboot-datastore-minimal- 
 A starter application for ODJ with DataStore, written in Java with Spring Boot
 
 ## Building the application
