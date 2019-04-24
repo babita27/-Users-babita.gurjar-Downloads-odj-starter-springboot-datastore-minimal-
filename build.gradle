@@ -1,0 +1,52 @@
+
+plugins {
+    id 'org.springframework.boot' version '2.1.4.RELEASE'
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+group = 'onedj.gcp'
+version = '0.1-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: "org.springframework.boot"
+apply plugin: 'io.spring.dependency-management'
+
+bootJar {
+    archiveName 'onedj-datastore.jar'
+    mainClassName 'onedj.gcp.datastore.Application'
+}
+
+bootRun {
+    standardInput = System.in
+}
+
+dependencies {
+    compile(
+            'org.springframework.cloud:spring-cloud-gcp-starter',
+            'org.springframework.cloud:spring-cloud-gcp-starter-data-datastore:1.1.1.RELEASE',
+
+            'org.springframework.boot:spring-boot-starter-web',
+
+            // logging
+            'ch.qos.logback:logback-classic:1.2.3',
+            'ch.qos.logback:logback-core:1.2.3',
+            'ch.qos.logback:logback-access:1.2.3',
+            'net.logstash.logback:logstash-logback-encoder:5.3',
+    )
+
+    testCompile(
+            'org.springframework.boot:spring-boot-starter-test'
+    )
+
+    dependencies {
+        annotationProcessor("org.projectlombok:lombok:1.18.4")
+        compileOnly("org.projectlombok:lombok:1.18.4")
+    }
+
+}
+
