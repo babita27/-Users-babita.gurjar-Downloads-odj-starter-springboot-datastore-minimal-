@@ -9,7 +9,7 @@
 #onedj.gcp.datastore:
 
 spring.cloud.gcp.project-id: cloudsloutions
-spring.cloud.gcp.credentials.location: ${GOOGLE_APPLICATION_CREDENTIALS}
+spring.cloud.gcp.credentials.location: /src/main/resources/static/cloudsloutions-f5e6ed185b81.json
 
 server:
   port: 8080
