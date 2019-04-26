@@ -5,10 +5,10 @@ ARG ODJ_GOOGLE_APPLICATION_CREDENTIALS
 RUN mkdir /odj
 WORKDIR /odj
 
-COPY build/libs/onedj-datastore.jar /odj
+COPY /build/libs/onedj-datastore.jar /odj
 
-COPY $ODJ_GOOGLE_APPLICATION_CREDENTIALS /odj/cloudsloutions-fd422e010b14.json
-ENV GOOGLE_APPLICATION_CREDENTIALS=file:/odj/cloudsloutions-fd422e010b14.json
+COPY $ODJ_GOOGLE_APPLICATION_CREDENTIALS /odj/gcloud_credentials.json
+ENV GOOGLE_APPLICATION_CREDENTIALS=file:/odj/gcloud_credentials.json
 
 EXPOSE ${ODJ_DATASTORE_HTTP_PORT}
 

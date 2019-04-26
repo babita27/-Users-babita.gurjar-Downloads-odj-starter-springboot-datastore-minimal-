@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-
 @Component
 @Repository
 public interface ProductRepository extends DatastoreRepository<ProductEntity, Long> {

@@ -1,9 +1,0 @@
-spring.cloud.gcp.project-id: ${ODJ_DATASTORE_PROJECT_ID}
-spring.cloud.gcp.credentials.location: ${GOOGLE_APPLICATION_CREDENTIALS}
-
-server:
-  port: ${ODJ_DATASTORE_HTTP_PORT}
-  address: ${ODJ_DATASTORE_BIND_ADDR}
-
-
-onedj.gcp.datastore:

@@ -44,13 +44,4 @@ public class ProductEntity {
                 ", sku='" + sku + '\'' +
                 '}';
     }
-
-//    public ProductEntity(String name, String description, String ean, Float price, String sku) {
-//        System.out.println("Inside");
-//        this.name = name;
-//        this.description = description;
-//        this.ean = ean;
-//        this.price = price;
-//        this.sku = sku;
-//    }
 }

@@ -11,7 +11,6 @@ public class Application {
 
     public static void main(String[] args) {
         logger.info("Starting application");
-        System.out.println("args" + args);
         SpringApplication.run(Application.class, args);
     }
 }

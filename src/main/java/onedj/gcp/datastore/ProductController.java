@@ -29,12 +29,9 @@ public class ProductController {
 
 
     @PostMapping(value = "/product", consumes = "application/json")
-    public ResponseEntity<ProductEntity> addProduct(@RequestBody ProductEntity product) {
-        //product.setName("odj")
-        //product.toBuilder();
+    public ResponseEntity<ProductEntity> addProduct(ProductEntity product) {
         logger.info("Adding product {}", product);
 
-//        logger.info("name:",product.getName());
         ProductEntity savedEntity = productRepository.save(product);
         return new ResponseEntity<>(savedEntity, OK);
     }
