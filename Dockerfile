@@ -5,7 +5,7 @@ ARG ODJ_GOOGLE_APPLICATION_CREDENTIALS
 RUN mkdir /odj
 WORKDIR /odj
 
-COPY /build/libs/onedj-datastore.jar /odj
+COPY build/libs/onedj-datastore.jar /odj
 
 COPY $ODJ_GOOGLE_APPLICATION_CREDENTIALS /odj/gcloud_credentials.json
 ENV GOOGLE_APPLICATION_CREDENTIALS=file:/odj/gcloud_credentials.json

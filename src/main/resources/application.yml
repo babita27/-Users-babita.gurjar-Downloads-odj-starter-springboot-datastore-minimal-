@@ -1,18 +1,9 @@
 
-#spring.cloud.gcp.project-id: ${ODJ_DATASTORE_PROJECT_ID}
-#spring.cloud.gcp.credentials.location: ${GOOGLE_APPLICATION_CREDENTIALS}
-#
-#server:
-#  port: ${ODJ_DATASTORE_HTTP_PORT}
-#  address: ${ODJ_DATASTORE_BIND_ADDR}
-#
-#onedj.gcp.datastore:
-
-spring.cloud.gcp.project-id: cloudsloutions
-spring.cloud.gcp.credentials.location: /src/main/resources/static/cloudsloutions-f5e6ed185b81.json
+spring.cloud.gcp.project-id: ${ODJ_DATASTORE_PROJECT_ID}
+spring.cloud.gcp.credentials.location: ${GOOGLE_APPLICATION_CREDENTIALS}
 
 server:
-  port: 8080
-  address: 0.0.0.0
+  port: ${ODJ_DATASTORE_HTTP_PORT}
+  address: ${ODJ_DATASTORE_BIND_ADDR}
 
 onedj.gcp.datastore:
